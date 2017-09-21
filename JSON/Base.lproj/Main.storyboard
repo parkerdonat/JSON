@@ -113,9 +113,10 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4b-pv-MQe">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pvA-1j-z2I"/>
                                     <barButtonItem width="340" style="plain" id="fwg-EX-rPj">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="Pfi-On-ECh">
-                                            <rect key="frame" x="20" y="7" width="340" height="30"/>
+                                            <rect key="frame" x="37" y="7" width="340" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <segments>
                                                 <segment title="Basic"/>
@@ -124,6 +125,7 @@
                                             </segments>
                                         </segmentedControl>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2ec-sP-GmI"/>
                                 </items>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.0" green="0.50196078430000002" blue="0.63529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -257,8 +259,7 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="385" id="Y5T-73-6G7"/>
-                                            <constraint firstAttribute="height" constant="385" id="Yh6-pZ-MEt"/>
+                                            <constraint firstAttribute="width" secondItem="cLF-Dh-9BR" secondAttribute="height" multiplier="1:1" id="s8c-4b-ZUK"/>
                                             <constraint firstItem="aLY-bq-89e" firstAttribute="width" secondItem="z6v-vz-H08" secondAttribute="width" id="y6S-XG-C86"/>
                                         </constraints>
                                     </stackView>
