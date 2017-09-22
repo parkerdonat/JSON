@@ -76,6 +76,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
     
     @IBAction func longPress(_ sender: Any) {
         
+        print("YAY!!!")
         // TODO: - unhide the close buttons, remove image to show background
         // Add func for closeButtonTapped
         
