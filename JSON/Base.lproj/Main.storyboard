@@ -204,17 +204,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-oj-4Cc" userLabel="Profile">
                                                 <rect key="frame" x="0.0" y="405" width="414" height="44"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROFILE INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvA-Ke-eWe">
-                                                        <rect key="frame" x="15" y="12" width="97.666666666666671" height="18"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROFILE INFO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvA-Ke-eWe">
+                                                        <rect key="frame" x="15" y="12" width="98" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="# / 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-Wm-5kt">
-                                                        <rect key="frame" x="321.66666666666674" y="12" width="47.333333333333314" height="17"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="# / 300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOW-Wm-5kt">
+                                                        <rect key="frame" x="322" y="12" width="47" height="17"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -222,6 +220,10 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="bvA-Ke-eWe" firstAttribute="leading" secondItem="ZWF-oj-4Cc" secondAttribute="leading" constant="15" id="FIO-Zd-1p7"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eOW-Wm-5kt" secondAttribute="trailing" constant="45" id="cfO-f5-ieg"/>
+                                                    <constraint firstItem="bvA-Ke-eWe" firstAttribute="top" secondItem="eOW-Wm-5kt" secondAttribute="top" id="lvH-EP-rJc"/>
+                                                    <constraint firstItem="bvA-Ke-eWe" firstAttribute="top" secondItem="ZWF-oj-4Cc" secondAttribute="top" constant="12" id="v7V-yX-5lB"/>
                                                     <constraint firstAttribute="height" constant="44" id="z05-9y-ks4"/>
                                                 </constraints>
                                             </view>
