@@ -8,7 +8,7 @@
 
 import UIKit
 
-//NOTE: - This extention downloads images from web
+//NOTE: - This downloads images from web
 extension UIImageView {
     
     func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFit, placeHolder: UIImage? = nil) {

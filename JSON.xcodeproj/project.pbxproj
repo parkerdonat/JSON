@@ -15,8 +15,8 @@
 		DD1DF03A1F69A4F000176BBF /* JSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DF0391F69A4F000176BBF /* JSONUITests.swift */; };
 		DD1DF0541F69F34A00176BBF /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DF0531F69F34A00176BBF /* TeamDetailViewController.swift */; };
 		DD7426F11F719E9D00D52F8E /* UIImageScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7426F01F719E9D00D52F8E /* UIImageScreenshot.swift */; };
-		DD842F471F7373F9009F756E /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD842F461F7373F9009F756E /* ImageView.xib */; };
-		DD842F491F737600009F756E /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD842F481F737600009F756E /* ImageView.swift */; };
+		DD842F471F7373F9009F756E /* CloseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD842F461F7373F9009F756E /* CloseView.xib */; };
+		DD842F491F737600009F756E /* CloseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD842F481F737600009F756E /* CloseView.swift */; };
 		DDB8A7BB1F69FA030056802B /* team.json in Resources */ = {isa = PBXBuildFile; fileRef = DDB8A7BA1F69FA030056802B /* team.json */; };
 		DDB8A7BD1F6A070F0056802B /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A7BC1F6A070F0056802B /* TeamMember.swift */; };
 		DDB8A7BF1F6C54190056802B /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A7BE1F6C54190056802B /* TeamController.swift */; };
@@ -57,8 +57,8 @@
 		DD1DF03B1F69A4F000176BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD1DF0531F69F34A00176BBF /* TeamDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
 		DD7426F01F719E9D00D52F8E /* UIImageScreenshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageScreenshot.swift; sourceTree = "<group>"; };
-		DD842F461F7373F9009F756E /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
-		DD842F481F737600009F756E /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DD842F461F7373F9009F756E /* CloseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloseView.xib; sourceTree = "<group>"; };
+		DD842F481F737600009F756E /* CloseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseView.swift; sourceTree = "<group>"; };
 		DDB8A7BA1F69FA030056802B /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = team.json; path = JSON/team.json; sourceTree = "<group>"; };
 		DDB8A7BC1F6A070F0056802B /* TeamMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
 		DDB8A7BE1F6C54190056802B /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
@@ -185,8 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				DDB8A7C01F6C70570056802B /* TeamTableViewCell.swift */,
-				DD842F461F7373F9009F756E /* ImageView.xib */,
-				DD842F481F737600009F756E /* ImageView.swift */,
+				DD842F461F7373F9009F756E /* CloseView.xib */,
+				DD842F481F737600009F756E /* CloseView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -312,7 +312,7 @@
 			files = (
 				DD1DF0241F69A4F000176BBF /* LaunchScreen.storyboard in Resources */,
 				DD1DF0211F69A4F000176BBF /* Assets.xcassets in Resources */,
-				DD842F471F7373F9009F756E /* ImageView.xib in Resources */,
+				DD842F471F7373F9009F756E /* CloseView.xib in Resources */,
 				DDB8A7BB1F69FA030056802B /* team.json in Resources */,
 				DD1DF01F1F69A4F000176BBF /* Main.storyboard in Resources */,
 			);
@@ -345,7 +345,7 @@
 				DDB8A7C71F7040760056802B /* UIImageViewDownload.swift in Sources */,
 				DD1DF01A1F69A4F000176BBF /* AppDelegate.swift in Sources */,
 				DD7426F11F719E9D00D52F8E /* UIImageScreenshot.swift in Sources */,
-				DD842F491F737600009F756E /* ImageView.swift in Sources */,
+				DD842F491F737600009F756E /* CloseView.swift in Sources */,
 				DD1DF0541F69F34A00176BBF /* TeamDetailViewController.swift in Sources */,
 				DDB8A7C11F6C70570056802B /* TeamTableViewCell.swift in Sources */,
 			);

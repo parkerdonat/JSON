@@ -8,7 +8,7 @@
 
 import UIKit
 
-//NOTE: - This takes a screenshot of the view for email attachment
+//NOTE: - This takes a screenshot of the view for an email attachment
 extension UIImage {
     convenience init(view: UIView) {
         UIGraphicsBeginImageContextWithOptions(view.bounds.size, view.isOpaque, UIScreen.main.scale)

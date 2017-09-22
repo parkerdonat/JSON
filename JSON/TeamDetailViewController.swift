@@ -24,6 +24,8 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
     @IBOutlet weak var avatar5: UIImageView!
     @IBOutlet weak var avatar6: UIImageView!
     
+    @IBOutlet weak var closeView: CloseView!
+    
     var fullName: String {
         guard let teamMember = teamMember else { return "" }
         return [teamMember.firstName, teamMember.lastName].flatMap({$0}).joined(separator:" ")
@@ -37,14 +39,15 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        team = TeamController.sharedInstance.getTeamMembers()
         title = fullName
         label.text = bio
-        team = TeamController.sharedInstance.getTeamMembers()
-        loadImages()
-    
+        setUpImages()
+        
         // Removes Hairline in nav bar
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +58,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
     }
     
-    func loadImages() {
+    func setUpImages() {
         
         guard let teamMember = teamMember else { return }
         let member2 = team[14]
@@ -70,17 +73,30 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         avatar4.downloadedFrom(link: member4.avatar)
         avatar5.downloadedFrom(link: member5.avatar)
         avatar6.downloadedFrom(link: member6.avatar)
+        
+        avatar1.addGestureRecognizer(setGestureRecognizer())
+        avatar2.addGestureRecognizer(setGestureRecognizer())
+        avatar3.addGestureRecognizer(setGestureRecognizer())
+        avatar4.addGestureRecognizer(setGestureRecognizer())
+        avatar5.addGestureRecognizer(setGestureRecognizer())
+        avatar6.addGestureRecognizer(setGestureRecognizer())
+    }
+    
+    func setGestureRecognizer() -> UILongPressGestureRecognizer {
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(imageTapped))
+        
+        return longPress
+    }
+    
+    func setLongPressForImages() {
+        avatar1.addGestureRecognizer(setGestureRecognizer())
+    }
+    
+    func imageTapped() {
+        print("YAY!! Image was tapped!!!")
     }
     
     //MARK: - Actions
-    
-    @IBAction func longPress(_ sender: Any) {
-        
-        print("YAY!!!")
-        // TODO: - unhide the close buttons, remove image to show background
-        // Add func for closeButtonTapped
-        
-    }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
         let mailComposeViewController = configuredMailComposeViewController()
@@ -110,7 +126,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
     }
     
     func showSendMailErrorAlert() {
-        let alertController = UIAlertController(title: "Could Not Send Email", message: "Your device could not send email. Please check email configuration and try again.", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Could Not Send Email", message: "Your device could not send email. Please check your email configurations and try again.", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
 
         }
