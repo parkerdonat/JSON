@@ -31,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GCk-fF-Y9P" id="H7o-sg-9Lx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k3A-n1-aU2">
@@ -118,6 +118,9 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05q-cT-TeY" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="255" height="255"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="05q-cT-TeY" secondAttribute="height" multiplier="1:1" id="4M4-EX-SGt"/>
+                                                                </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Q9-0tg">
                                                                 <rect key="frame" x="260" y="0.0" width="125" height="255"/>
@@ -148,10 +151,11 @@
                                                             </stackView>
                                                         </subviews>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" secondItem="ubJ-LD-ibV" secondAttribute="height" multiplier="77:51" id="BT2-Rh-NJO"/>
                                                             <constraint firstAttribute="height" constant="255" id="bIs-GM-vzq"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-3D-Xzu">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-3D-Xzu">
                                                         <rect key="frame" x="0.0" y="260" width="385" height="125"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-dy-qDg">
@@ -184,6 +188,7 @@
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstItem="Lwf-KX-rzi" firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="width" id="1zf-hq-hCI"/>
+                                                            <constraint firstAttribute="width" secondItem="zLn-3D-Xzu" secondAttribute="height" multiplier="77:25" id="AC7-a3-TEM"/>
                                                             <constraint firstItem="z6v-vz-H08" firstAttribute="height" secondItem="o4s-dy-qDg" secondAttribute="height" id="W96-fr-kgb"/>
                                                             <constraint firstItem="z6v-vz-H08" firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="width" id="bWE-cc-Mlq"/>
                                                             <constraint firstAttribute="height" constant="125" id="kxw-Sb-0vP"/>
@@ -192,7 +197,7 @@
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="385" id="a9A-Z2-DZg"/>
+                                                    <constraint firstAttribute="width" secondItem="cLF-Dh-9BR" secondAttribute="height" multiplier="1:1" id="1fZ-gc-I3K"/>
                                                     <constraint firstItem="aLY-bq-89e" firstAttribute="width" secondItem="z6v-vz-H08" secondAttribute="width" id="y6S-XG-C86"/>
                                                 </constraints>
                                             </stackView>
@@ -283,7 +288,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="pvA-1j-z2I"/>
-                                    <barButtonItem width="340" style="plain" id="fwg-EX-rPj">
+                                    <barButtonItem style="plain" id="fwg-EX-rPj">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="Pfi-On-ECh">
                                             <rect key="frame" x="37" y="7" width="340" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
