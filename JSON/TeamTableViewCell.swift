@@ -2,7 +2,7 @@
 //  TeamTableViewCell.swift
 //  JSON
 //
-//  Created by Parker Donat on 9/15/17.
+//  Created by Parker Donat on 9/22/17.
 //  Copyright © 2017 Parker Donat. All rights reserved.
 //
 

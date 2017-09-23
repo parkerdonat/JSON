@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailComposeViewControllerDelegate {
+class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDelegate, MFMailComposeViewControllerDelegate {
     
     var teamMember: TeamMember?
     var team: [TeamMember] = []
@@ -24,7 +24,10 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
     @IBOutlet weak var avatar5: UIImageView!
     @IBOutlet weak var avatar6: UIImageView!
     
-    @IBOutlet weak var closeView: CloseView!
+    let placeHolder = UIImage(named: "noImage.png")
+
+    //make outlet from each uiview
+    //@IBOutlet weak var closeView: CloseView!
     
     var fullName: String {
         guard let teamMember = teamMember else { return "" }
@@ -35,6 +38,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         guard let teamMember = teamMember else { return "" }
         return teamMember.bio
     }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,37 +71,31 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         let member5 = team[13]
         let member6 = team[9]
         
-        avatar1.downloadedFrom(link: teamMember.avatar)
+        avatar1.downloadedFrom(link: teamMember.avatar, placeHolder: placeHolder)
         avatar2.downloadedFrom(link: member2.avatar)
         avatar3.downloadedFrom(link: member3.avatar)
         avatar4.downloadedFrom(link: member4.avatar)
         avatar5.downloadedFrom(link: member5.avatar)
         avatar6.downloadedFrom(link: member6.avatar)
         
-        avatar1.addGestureRecognizer(setGestureRecognizer())
-        avatar2.addGestureRecognizer(setGestureRecognizer())
-        avatar3.addGestureRecognizer(setGestureRecognizer())
-        avatar4.addGestureRecognizer(setGestureRecognizer())
-        avatar5.addGestureRecognizer(setGestureRecognizer())
-        avatar6.addGestureRecognizer(setGestureRecognizer())
+        //TODO: change to imageview class
+//        avatar1.addGestureRecognizer(setGestureRecognizer())
+//        avatar2.addGestureRecognizer(setGestureRecognizer())
+//        avatar3.addGestureRecognizer(setGestureRecognizer())
+//        avatar4.addGestureRecognizer(setGestureRecognizer())
+//        avatar5.addGestureRecognizer(setGestureRecognizer())
+//        avatar6.addGestureRecognizer(setGestureRecognizer())
     }
     
-    func setGestureRecognizer() -> UILongPressGestureRecognizer {
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(imageTapped))
-        
-        return longPress
-    }
+//    func setGestureRecognizer() -> UILongPressGestureRecognizer {
+//        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(imageLongPressed))
+//        
+//        return longPress
+//    }
     
-    func setLongPressForImages() {
-        avatar1.addGestureRecognizer(setGestureRecognizer())
-    }
-    
-    func imageTapped() {
-        print("YAY!! Image was tapped!!!")
-    }
     
     //MARK: - Actions
-    
+
     @IBAction func saveButtonTapped(_ sender: Any) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
@@ -107,6 +105,16 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         }
     }
     
+    //Mark: ImageViewDelegate Methods
+    
+    func didlongPressedOnImage(_ sender: ImageView) {
+        
+    }
+    
+    func didTapCloseButton(_ sender: ImageView) {
+        
+    }
+
     //MARK: - Mail
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
@@ -140,4 +148,5 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, MFMailCompo
         controller.dismiss(animated: true, completion: nil)
     }
 }
+
 

@@ -115,7 +115,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ubJ-LD-ibV">
                                                         <rect key="frame" x="0.0" y="0.0" width="385" height="255"/>
                                                         <subviews>
-                                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05q-cT-TeY">
+                                                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05q-cT-TeY">
                                                                 <rect key="frame" x="0.0" y="0.0" width="255" height="255"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <gestureRecognizers/>
@@ -126,7 +126,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Q9-0tg">
                                                                 <rect key="frame" x="260" y="0.0" width="125" height="255"/>
                                                                 <subviews>
-                                                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-gr-w1H">
+                                                                    <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-gr-w1H">
                                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
@@ -135,7 +135,7 @@
                                                                             <constraint firstAttribute="width" constant="125" id="hwN-Gj-fBM"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-bq-89e">
+                                                                    <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-bq-89e">
                                                                         <rect key="frame" x="0.0" y="130" width="125" height="125"/>
                                                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <constraints>
@@ -159,7 +159,7 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-3D-Xzu">
                                                         <rect key="frame" x="0.0" y="260" width="385" height="125"/>
                                                         <subviews>
-                                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-dy-qDg">
+                                                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-dy-qDg">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
@@ -168,7 +168,7 @@
                                                                     <constraint firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="height" multiplier="1:1" id="bCb-dE-Wh0"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-KX-rzi">
+                                                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-KX-rzi">
                                                                 <rect key="frame" x="130" y="0.0" width="125" height="125"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>
@@ -177,7 +177,7 @@
                                                                     <constraint firstAttribute="width" constant="125" id="oOH-8T-uU4"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-vz-H08">
+                                                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-vz-H08">
                                                                 <rect key="frame" x="260" y="0.0" width="125" height="125"/>
                                                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <constraints>

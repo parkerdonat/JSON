@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageView" customModule="JSON" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="ngZ-hS-ECY" id="TF0-De-mIL"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="nfY-5f-zsF"/>
+                <outlet property="imageView" destination="lBg-r1-ba8" id="Nco-bE-Mun"/>
+                <outlet property="longPress" destination="JR0-rc-bwJ" id="QMt-rW-NA2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ContentView" customClass="ImageView" customModule="JSON" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lBg-r1-ba8">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="bf5-jX-RiL"/>
+                        <constraint firstAttribute="width" constant="125" id="cxI-sv-q4m"/>
+                        <constraint firstAttribute="width" secondItem="lBg-r1-ba8" secondAttribute="height" multiplier="1:1" id="fDo-x7-a9e"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="JR0-rc-bwJ" appends="YES" id="7oV-Kq-Xbn"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-hS-ECY">
+                    <rect key="frame" x="105" y="105" width="20" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <state key="normal" image="delete"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="6IQ-8j-NJZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lBg-r1-ba8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Du7-i9-FLs"/>
+                <constraint firstItem="ngZ-hS-ECY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="105" id="Fzz-xU-v9e"/>
+                <constraint firstAttribute="bottom" secondItem="lBg-r1-ba8" secondAttribute="bottom" id="JM3-bW-gjT"/>
+                <constraint firstItem="ngZ-hS-ECY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="N2b-z6-HsK"/>
+                <constraint firstItem="lBg-r1-ba8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aew-M5-FMe"/>
+                <constraint firstAttribute="trailing" secondItem="ngZ-hS-ECY" secondAttribute="trailing" id="d5x-3m-s6i"/>
+                <constraint firstAttribute="trailing" secondItem="lBg-r1-ba8" secondAttribute="trailing" id="suL-cV-791"/>
+                <constraint firstAttribute="bottom" secondItem="ngZ-hS-ECY" secondAttribute="bottom" id="y4a-bB-Kqu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52" y="-301"/>
+        </view>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="JR0-rc-bwJ">
+            <connections>
+                <action selector="longPressed:" destination="-1" id="jNF-OS-P6i"/>
+                <outlet property="delegate" destination="lBg-r1-ba8" id="7Xu-sx-mls"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="delete" width="128" height="128"/>
+    </resources>
+</document>
