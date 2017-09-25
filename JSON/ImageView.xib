@@ -15,7 +15,6 @@
                 <outlet property="closeButton" destination="ngZ-hS-ECY" id="2JO-Dq-2Cy"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="x4h-v4-sIB"/>
                 <outlet property="imageView" destination="lBg-r1-ba8" id="PDf-67-83g"/>
-                <outlet property="longPress" destination="JR0-rc-bwJ" id="ETj-4F-FCB"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,8 +29,11 @@
                         <constraint firstAttribute="width" constant="125" id="cxI-sv-q4m"/>
                         <constraint firstAttribute="width" secondItem="lBg-r1-ba8" secondAttribute="height" multiplier="1:1" id="fDo-x7-a9e"/>
                     </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="xRf-gG-w3F" appends="YES" id="LFg-q8-O3I"/>
+                    </connections>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-hS-ECY">
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-hS-ECY">
                     <rect key="frame" x="100" y="100" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
@@ -57,9 +59,9 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="52" y="-301"/>
         </view>
-        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="JR0-rc-bwJ">
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xRf-gG-w3F">
             <connections>
-                <action selector="longPressed:" destination="-1" id="dBJ-Y9-tyT"/>
+                <action selector="longPressed:" destination="-1" id="LBr-Ie-mlj"/>
             </connections>
         </pongPressGestureRecognizer>
     </objects>

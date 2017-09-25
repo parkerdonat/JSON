@@ -24,11 +24,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     @IBOutlet weak var avatar5: ImageView!
     @IBOutlet weak var avatar6: ImageView!
     
-    
     let placeHolder = UIImage(named: "noImage.png")
-
-    //make outlet from each uiview
-    //@IBOutlet weak var closeView: CloseView!
     
     var fullName: String {
         guard let teamMember = teamMember else { return "" }
@@ -39,7 +35,6 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         guard let teamMember = teamMember else { return "" }
         return teamMember.bio
     }
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,6 +74,12 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         avatar5.imageView.downloadedFrom(link: member5.avatar)
         avatar6.imageView.downloadedFrom(link: member6.avatar)
         
+        avatar1.delegate = self
+        avatar2.delegate = self
+        avatar3.delegate = self
+        avatar4.delegate = self
+        avatar5.delegate = self
+        avatar6.delegate = self        
     }
     
     //MARK: - Actions
@@ -95,11 +96,18 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     //Mark: ImageViewDelegate Methods
     
     func didlongPressedOnImage(_ sender: ImageView) {
-        
+        avatar1.closeButton.isHidden = false
+        avatar2.closeButton.isHidden = false
+        avatar3.closeButton.isHidden = false
+        avatar4.closeButton.isHidden = false
+        avatar5.closeButton.isHidden = false
+        avatar6.closeButton.isHidden = false
     }
     
     func didTapCloseButton(_ sender: ImageView) {
-        
+        sender.closeButton.isHidden = true
+        sender.imageView.image = nil
+        sender.imageView.backgroundColor = .gray
     }
 
     //MARK: - Mail

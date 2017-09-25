@@ -13,9 +13,8 @@ public class ImageView: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet var longPress: UILongPressGestureRecognizer!
     
-    weak var delegate: ImageViewDelegate?
+    var delegate: ImageViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,24 +39,23 @@ public class ImageView: UIView {
         
         imageView.layer.cornerRadius = 8
         imageView.clipsToBounds = true
+        
     }
     
     @IBAction func longPressed(_ sender: UILongPressGestureRecognizer) {
-        print("Long Pressed!")
         if let delegate = delegate {
             delegate.didlongPressedOnImage(self)
         }
     }
    
     @IBAction func closeButtonTapped(_ sender: UIButton) {
-        print("Close button pressed!")
         if let delegate = delegate {
             delegate.didTapCloseButton(self)
         }
     }
 }
 
-protocol ImageViewDelegate: class {
+protocol ImageViewDelegate {
     func didlongPressedOnImage(_ sender: ImageView)
     func didTapCloseButton(_ sender: ImageView)
 }
