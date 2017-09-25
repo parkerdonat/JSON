@@ -32,9 +32,13 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-hS-ECY">
-                    <rect key="frame" x="105" y="105" width="20" height="20"/>
+                    <rect key="frame" x="100" y="100" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="btS-nT-fWc"/>
+                        <constraint firstAttribute="width" constant="25" id="kED-XF-LZQ"/>
+                    </constraints>
                     <state key="normal" image="delete"/>
                     <connections>
                         <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="S4F-SK-Sez"/>
@@ -43,14 +47,12 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="lBg-r1-ba8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Du7-i9-FLs"/>
-                <constraint firstItem="ngZ-hS-ECY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="105" id="Fzz-xU-v9e"/>
-                <constraint firstAttribute="bottom" secondItem="lBg-r1-ba8" secondAttribute="bottom" id="JM3-bW-gjT"/>
-                <constraint firstItem="ngZ-hS-ECY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="105" id="N2b-z6-HsK"/>
-                <constraint firstItem="lBg-r1-ba8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aew-M5-FMe"/>
-                <constraint firstAttribute="trailing" secondItem="ngZ-hS-ECY" secondAttribute="trailing" id="d5x-3m-s6i"/>
-                <constraint firstAttribute="trailing" secondItem="lBg-r1-ba8" secondAttribute="trailing" id="suL-cV-791"/>
-                <constraint firstAttribute="bottom" secondItem="ngZ-hS-ECY" secondAttribute="bottom" id="y4a-bB-Kqu"/>
+                <constraint firstItem="ngZ-hS-ECY" firstAttribute="trailing" secondItem="lBg-r1-ba8" secondAttribute="trailing" id="2yW-YY-cxI"/>
+                <constraint firstAttribute="trailing" secondItem="lBg-r1-ba8" secondAttribute="trailing" id="5bl-Aq-nk4"/>
+                <constraint firstItem="lBg-r1-ba8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8hq-EZ-Ldq"/>
+                <constraint firstAttribute="bottom" secondItem="lBg-r1-ba8" secondAttribute="bottom" id="o9F-HG-dUv"/>
+                <constraint firstItem="ngZ-hS-ECY" firstAttribute="bottom" secondItem="lBg-r1-ba8" secondAttribute="bottom" id="oEI-sC-z7D"/>
+                <constraint firstItem="lBg-r1-ba8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uDh-7M-Fly"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="52" y="-301"/>
