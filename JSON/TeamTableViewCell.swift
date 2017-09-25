@@ -18,6 +18,8 @@ class TeamTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        avatar.layer.cornerRadius = 8
+        avatar.clipsToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -28,7 +28,7 @@ public class ImageView: UIView {
     }
     
     private func commonInit() {
-      Bundle.main.loadNibNamed("CloseView", owner: self, options: nil)
+      Bundle.main.loadNibNamed("ImageView", owner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -38,7 +38,7 @@ public class ImageView: UIView {
         closeButton.setImage(tintedImage, for: .normal)
         closeButton.tintColor = .red
         
-        imageView.layer.cornerRadius = 9
+        imageView.layer.cornerRadius = 8
         imageView.clipsToBounds = true
     }
     

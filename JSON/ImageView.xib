@@ -12,14 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageView" customModule="JSON" customModuleProvider="target">
             <connections>
-                <outlet property="closeButton" destination="ngZ-hS-ECY" id="TF0-De-mIL"/>
-                <outlet property="contentView" destination="iN0-l3-epB" id="nfY-5f-zsF"/>
-                <outlet property="imageView" destination="lBg-r1-ba8" id="Nco-bE-Mun"/>
-                <outlet property="longPress" destination="JR0-rc-bwJ" id="QMt-rW-NA2"/>
+                <outlet property="closeButton" destination="ngZ-hS-ECY" id="2JO-Dq-2Cy"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="x4h-v4-sIB"/>
+                <outlet property="imageView" destination="lBg-r1-ba8" id="PDf-67-83g"/>
+                <outlet property="longPress" destination="JR0-rc-bwJ" id="ETj-4F-FCB"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ContentView" customClass="ImageView" customModule="JSON" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ContentView">
             <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -30,9 +30,6 @@
                         <constraint firstAttribute="width" constant="125" id="cxI-sv-q4m"/>
                         <constraint firstAttribute="width" secondItem="lBg-r1-ba8" secondAttribute="height" multiplier="1:1" id="fDo-x7-a9e"/>
                     </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="JR0-rc-bwJ" appends="YES" id="7oV-Kq-Xbn"/>
-                    </connections>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngZ-hS-ECY">
                     <rect key="frame" x="105" y="105" width="20" height="20"/>
@@ -40,7 +37,7 @@
                     <gestureRecognizers/>
                     <state key="normal" image="delete"/>
                     <connections>
-                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="6IQ-8j-NJZ"/>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="S4F-SK-Sez"/>
                     </connections>
                 </button>
             </subviews>
@@ -60,8 +57,7 @@
         </view>
         <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="JR0-rc-bwJ">
             <connections>
-                <action selector="longPressed:" destination="-1" id="jNF-OS-P6i"/>
-                <outlet property="delegate" destination="lBg-r1-ba8" id="7Xu-sx-mls"/>
+                <action selector="longPressed:" destination="-1" id="dBJ-Y9-tyT"/>
             </connections>
         </pongPressGestureRecognizer>
     </objects>

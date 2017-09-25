@@ -17,12 +17,13 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     @IBOutlet weak var segControl: UISegmentedControl!
     @IBOutlet weak var label: UILabel!
     
-    @IBOutlet weak var avatar1: UIImageView!
-    @IBOutlet weak var avatar2: UIImageView!
-    @IBOutlet weak var avatar3: UIImageView!
-    @IBOutlet weak var avatar4: UIImageView!
-    @IBOutlet weak var avatar5: UIImageView!
-    @IBOutlet weak var avatar6: UIImageView!
+    @IBOutlet weak var avatar1: ImageView!
+    @IBOutlet weak var avatar2: ImageView!
+    @IBOutlet weak var avatar3: ImageView!
+    @IBOutlet weak var avatar4: ImageView!
+    @IBOutlet weak var avatar5: ImageView!
+    @IBOutlet weak var avatar6: ImageView!
+    
     
     let placeHolder = UIImage(named: "noImage.png")
 
@@ -71,28 +72,14 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         let member5 = team[13]
         let member6 = team[9]
         
-        avatar1.downloadedFrom(link: teamMember.avatar, placeHolder: placeHolder)
-        avatar2.downloadedFrom(link: member2.avatar)
-        avatar3.downloadedFrom(link: member3.avatar)
-        avatar4.downloadedFrom(link: member4.avatar)
-        avatar5.downloadedFrom(link: member5.avatar)
-        avatar6.downloadedFrom(link: member6.avatar)
+        avatar1.imageView.downloadedFrom(link: teamMember.avatar, placeHolder: placeHolder)
+        avatar2.imageView.downloadedFrom(link: member2.avatar)
+        avatar3.imageView.downloadedFrom(link: member3.avatar)
+        avatar4.imageView.downloadedFrom(link: member4.avatar)
+        avatar5.imageView.downloadedFrom(link: member5.avatar)
+        avatar6.imageView.downloadedFrom(link: member6.avatar)
         
-        //TODO: change to imageview class
-//        avatar1.addGestureRecognizer(setGestureRecognizer())
-//        avatar2.addGestureRecognizer(setGestureRecognizer())
-//        avatar3.addGestureRecognizer(setGestureRecognizer())
-//        avatar4.addGestureRecognizer(setGestureRecognizer())
-//        avatar5.addGestureRecognizer(setGestureRecognizer())
-//        avatar6.addGestureRecognizer(setGestureRecognizer())
     }
-    
-//    func setGestureRecognizer() -> UILongPressGestureRecognizer {
-//        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(imageLongPressed))
-//        
-//        return longPress
-//    }
-    
     
     //MARK: - Actions
 

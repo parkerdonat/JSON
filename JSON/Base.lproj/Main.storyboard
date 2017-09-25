@@ -115,39 +115,38 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ubJ-LD-ibV">
                                                         <rect key="frame" x="0.0" y="0.0" width="385" height="255"/>
                                                         <subviews>
-                                                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05q-cT-TeY">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wks-kT-WKl" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="255" height="255"/>
-                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <gestureRecognizers/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="05q-cT-TeY" secondAttribute="height" multiplier="1:1" id="4M4-EX-SGt"/>
+                                                                    <constraint firstAttribute="width" secondItem="wks-kT-WKl" secondAttribute="height" multiplier="1:1" id="X2N-1V-C1J"/>
                                                                 </constraints>
-                                                            </imageView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Q9-0tg">
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UYi-Q9-0tg">
                                                                 <rect key="frame" x="260" y="0.0" width="125" height="255"/>
                                                                 <subviews>
-                                                                    <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EOp-gr-w1H">
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXq-0X-Idu" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
-                                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" secondItem="EOp-gr-w1H" secondAttribute="height" multiplier="1:1" id="O0k-s3-5d6"/>
-                                                                            <constraint firstAttribute="height" constant="125" id="V8x-wA-NSY"/>
-                                                                            <constraint firstAttribute="width" constant="125" id="hwN-Gj-fBM"/>
+                                                                            <constraint firstAttribute="height" constant="125" id="BQI-ve-iOS"/>
+                                                                            <constraint firstAttribute="width" secondItem="WXq-0X-Idu" secondAttribute="height" multiplier="1:1" id="G2y-0M-xy0"/>
+                                                                            <constraint firstAttribute="width" constant="125" id="ZLB-w0-jZs"/>
                                                                         </constraints>
-                                                                    </imageView>
-                                                                    <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLY-bq-89e">
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TAB-Qa-CUc" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="130" width="125" height="125"/>
-                                                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="width" secondItem="aLY-bq-89e" secondAttribute="height" multiplier="1:1" id="CPt-Ia-hTq"/>
-                                                                            <constraint firstAttribute="height" constant="125" id="I1i-V9-mHV"/>
-                                                                            <constraint firstAttribute="width" constant="125" id="heK-Ko-GTs"/>
+                                                                            <constraint firstAttribute="width" constant="125" id="K2x-h4-M5t"/>
+                                                                            <constraint firstAttribute="width" secondItem="TAB-Qa-CUc" secondAttribute="height" multiplier="1:1" id="aBZ-mY-OB2"/>
+                                                                            <constraint firstAttribute="height" constant="125" id="kzx-t1-Gz7"/>
                                                                         </constraints>
-                                                                    </imageView>
+                                                                    </view>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="aLY-bq-89e" firstAttribute="width" secondItem="EOp-gr-w1H" secondAttribute="width" id="CeB-Q1-qVv"/>
-                                                                    <constraint firstItem="aLY-bq-89e" firstAttribute="height" secondItem="EOp-gr-w1H" secondAttribute="height" id="Lqx-DZ-t4K"/>
+                                                                    <constraint firstItem="TAB-Qa-CUc" firstAttribute="width" secondItem="WXq-0X-Idu" secondAttribute="width" id="8h8-gR-ukY"/>
+                                                                    <constraint firstItem="TAB-Qa-CUc" firstAttribute="height" secondItem="WXq-0X-Idu" secondAttribute="height" id="rkQ-5Q-P1S"/>
                                                                 </constraints>
                                                             </stackView>
                                                         </subviews>
@@ -159,47 +158,46 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-3D-Xzu">
                                                         <rect key="frame" x="0.0" y="260" width="385" height="125"/>
                                                         <subviews>
-                                                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o4s-dy-qDg">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5b-QZ-zMh" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
-                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="125" id="BD7-dH-g8u"/>
-                                                                    <constraint firstAttribute="height" constant="125" id="KF5-5P-pjL"/>
-                                                                    <constraint firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="height" multiplier="1:1" id="bCb-dE-Wh0"/>
+                                                                    <constraint firstAttribute="width" constant="125" id="5Il-5M-pAe"/>
+                                                                    <constraint firstAttribute="width" secondItem="S5b-QZ-zMh" secondAttribute="height" multiplier="1:1" id="fbF-2L-SaE"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="iXb-QR-dE5"/>
                                                                 </constraints>
-                                                            </imageView>
-                                                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-KX-rzi">
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezV-pA-Hnh" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                 <rect key="frame" x="130" y="0.0" width="125" height="125"/>
-                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" secondItem="Lwf-KX-rzi" secondAttribute="height" multiplier="1:1" id="9Ar-cg-8gB"/>
-                                                                    <constraint firstAttribute="height" constant="125" id="hcc-Pa-QjZ"/>
-                                                                    <constraint firstAttribute="width" constant="125" id="oOH-8T-uU4"/>
+                                                                    <constraint firstAttribute="width" constant="125" id="2I6-TJ-oiW"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="8qS-wK-u92"/>
+                                                                    <constraint firstAttribute="width" secondItem="ezV-pA-Hnh" secondAttribute="height" multiplier="1:1" id="XcS-Te-RYj"/>
                                                                 </constraints>
-                                                            </imageView>
-                                                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z6v-vz-H08">
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWW-J3-zNf" customClass="ImageView" customModule="JSON" customModuleProvider="target">
                                                                 <rect key="frame" x="260" y="0.0" width="125" height="125"/>
-                                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="125" id="tBY-gM-Y0t"/>
-                                                                    <constraint firstAttribute="width" constant="125" id="uov-L2-GH3"/>
-                                                                    <constraint firstAttribute="width" secondItem="z6v-vz-H08" secondAttribute="height" multiplier="1:1" id="wJ1-31-gfE"/>
+                                                                    <constraint firstAttribute="height" constant="125" id="9d7-uH-lMv"/>
+                                                                    <constraint firstAttribute="width" constant="125" id="a8V-fQ-xjt"/>
+                                                                    <constraint firstAttribute="width" secondItem="dWW-J3-zNf" secondAttribute="height" multiplier="1:1" id="wIh-jN-Beg"/>
                                                                 </constraints>
-                                                            </imageView>
+                                                            </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="Lwf-KX-rzi" firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="width" id="1zf-hq-hCI"/>
+                                                            <constraint firstItem="dWW-J3-zNf" firstAttribute="height" secondItem="S5b-QZ-zMh" secondAttribute="height" id="2rp-81-JU2"/>
                                                             <constraint firstAttribute="width" secondItem="zLn-3D-Xzu" secondAttribute="height" multiplier="77:25" id="AC7-a3-TEM"/>
-                                                            <constraint firstItem="z6v-vz-H08" firstAttribute="height" secondItem="o4s-dy-qDg" secondAttribute="height" id="W96-fr-kgb"/>
-                                                            <constraint firstItem="z6v-vz-H08" firstAttribute="width" secondItem="o4s-dy-qDg" secondAttribute="width" id="bWE-cc-Mlq"/>
+                                                            <constraint firstItem="ezV-pA-Hnh" firstAttribute="height" secondItem="S5b-QZ-zMh" secondAttribute="height" id="Fzp-lf-Q8A"/>
+                                                            <constraint firstItem="dWW-J3-zNf" firstAttribute="width" secondItem="S5b-QZ-zMh" secondAttribute="width" id="Skm-Pq-COY"/>
+                                                            <constraint firstItem="ezV-pA-Hnh" firstAttribute="width" secondItem="S5b-QZ-zMh" secondAttribute="width" id="Tsv-oo-fMn"/>
                                                             <constraint firstAttribute="height" constant="125" id="kxw-Sb-0vP"/>
-                                                            <constraint firstItem="Lwf-KX-rzi" firstAttribute="height" secondItem="o4s-dy-qDg" secondAttribute="height" id="nP1-Gj-mAZ"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="cLF-Dh-9BR" secondAttribute="height" multiplier="1:1" id="1fZ-gc-I3K"/>
-                                                    <constraint firstItem="aLY-bq-89e" firstAttribute="width" secondItem="z6v-vz-H08" secondAttribute="width" id="y6S-XG-C86"/>
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-oj-4Cc" userLabel="Profile">
@@ -330,12 +328,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="avatar1" destination="05q-cT-TeY" id="NdI-tF-Fxn"/>
-                        <outlet property="avatar2" destination="EOp-gr-w1H" id="M5I-iT-qLs"/>
-                        <outlet property="avatar3" destination="aLY-bq-89e" id="fdr-hb-g59"/>
-                        <outlet property="avatar4" destination="o4s-dy-qDg" id="wLc-6J-c6o"/>
-                        <outlet property="avatar5" destination="Lwf-KX-rzi" id="H0t-Qp-PbF"/>
-                        <outlet property="avatar6" destination="z6v-vz-H08" id="yMg-a3-8bS"/>
+                        <outlet property="avatar1" destination="wks-kT-WKl" id="qZj-3o-PMY"/>
+                        <outlet property="avatar2" destination="WXq-0X-Idu" id="bCN-yZ-Wgr"/>
+                        <outlet property="avatar3" destination="TAB-Qa-CUc" id="wNo-2M-kYe"/>
+                        <outlet property="avatar4" destination="S5b-QZ-zMh" id="FZD-ev-Cyo"/>
+                        <outlet property="avatar5" destination="ezV-pA-Hnh" id="JfY-Zg-8x6"/>
+                        <outlet property="avatar6" destination="dWW-J3-zNf" id="Nqd-vb-ol3"/>
                         <outlet property="label" destination="fJ4-w4-U5Y" id="gVE-9k-QDO"/>
                         <outlet property="segControl" destination="Pfi-On-ECh" id="2Cl-fZ-Qgr"/>
                     </connections>
