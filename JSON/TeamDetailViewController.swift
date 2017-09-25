@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDelegate, MFMailComposeViewControllerDelegate {
+class TeamDetailViewController: UIViewController, ImageViewDelegate, MFMailComposeViewControllerDelegate {
     
     var teamMember: TeamMember?
     var team: [TeamMember] = []
@@ -90,7 +90,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         }
     }
     
-    //Mark: ImageViewDelegate Methods
+    //Mark: - ImageViewDelegate Methods
     
     func didlongPressedOnImage(_ sender: ImageView) {
         avatar1.closeButton.isHidden = false
@@ -134,7 +134,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         self.present(alertController, animated: true, completion: nil)
     }
     
-    // MARK: MFMailComposeViewControllerDelegate Method
+    //MARK: MFMailComposeViewControllerDelegate Method
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
