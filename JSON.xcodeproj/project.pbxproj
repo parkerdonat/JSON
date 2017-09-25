@@ -60,7 +60,7 @@
 		DD842F461F7373F9009F756E /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
 		DD842F481F737600009F756E /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		DDB592281F75EF4A00DEA7DA /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
-		DDB8A7BA1F69FA030056802B /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = team.json; path = JSON/team.json; sourceTree = "<group>"; };
+		DDB8A7BA1F69FA030056802B /* team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = team.json; sourceTree = "<group>"; };
 		DDB8A7BC1F6A070F0056802B /* TeamMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
 		DDB8A7BE1F6C54190056802B /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
 		DDB8A7C21F6C75B30056802B /* TeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +99,6 @@
 				DD1DF02D1F69A4F000176BBF /* JSONTests */,
 				DD1DF0381F69A4F000176BBF /* JSONUITests */,
 				DD1DF0171F69A4F000176BBF /* Products */,
-				DDB8A7BA1F69FA030056802B /* team.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,10 +120,11 @@
 				DDB8A7D11F70A4820056802B /* ViewControllers */,
 				DDB8A7D01F70A4610056802B /* Views */,
 				DD72715A1F7163270090C6AD /* Model */,
-				DD72715B1F7163330090C6AD /* ParseController */,
+				DD72715B1F7163330090C6AD /* TeamController */,
 				DD7271591F71631E0090C6AD /* Extensions */,
 				DD1DF0201F69A4F000176BBF /* Assets.xcassets */,
 				DD1DF0251F69A4F000176BBF /* Info.plist */,
+				DDB8A7BA1F69FA030056802B /* team.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -164,12 +164,12 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		DD72715B1F7163330090C6AD /* ParseController */ = {
+		DD72715B1F7163330090C6AD /* TeamController */ = {
 			isa = PBXGroup;
 			children = (
 				DDB8A7BE1F6C54190056802B /* TeamController.swift */,
 			);
-			name = ParseController;
+			name = TeamController;
 			sourceTree = "<group>";
 		};
 		DD72715C1F717A6F0090C6AD /* Storyboards */ = {

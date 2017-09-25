@@ -17,7 +17,8 @@ class TeamTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        team = TeamController.sharedInstance.getTeamMembers()
+        team = TeamController.getTeamMembers()
+        self.myTableView.contentInset = UIEdgeInsetsMake(5, 0, 0, 0);
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -27,13 +28,13 @@ class TeamTableViewController: UIViewController, UITableViewDelegate, UITableVie
     // Mark: DataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TeamController.sharedInstance.team.count
+        return TeamController.team.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = myTableView.dequeueReusableCell(withIdentifier: "teamCell", for: indexPath) as! TeamTableViewCell
         
-        let member = TeamController.sharedInstance.team[indexPath.row]
+        let member = TeamController.team[indexPath.row]
         cell.updateWith(teamMember: member)
         
         return cell

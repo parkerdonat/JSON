@@ -14,8 +14,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     var teamMember: TeamMember?
     var team: [TeamMember] = []
 
-    @IBOutlet weak var segControl: UISegmentedControl!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var bioLabel: UILabel!
     
     @IBOutlet weak var avatar1: ImageView!
     @IBOutlet weak var avatar2: ImageView!
@@ -39,15 +38,14 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        team = TeamController.sharedInstance.getTeamMembers()
+        team = TeamController.getTeamMembers()
         title = fullName
-        label.text = bio
+        bioLabel.text = bio
         setUpImages()
         
         // Removes Hairline in nav bar
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +57,6 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
     }
     
     func setUpImages() {
-        
         guard let teamMember = teamMember else { return }
         let member2 = team[14]
         let member3 = team[4]
@@ -89,7 +86,7 @@ class TeamDetailViewController: UIViewController, UIToolbarDelegate, ImageViewDe
         if MFMailComposeViewController.canSendMail() {
             self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
-            self.showSendMailErrorAlert()
+            showSendMailErrorAlert()
         }
     }
     

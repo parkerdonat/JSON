@@ -9,12 +9,10 @@
 import Foundation
 
 class TeamController {
+        
+    static var team: [TeamMember] = []
     
-    static let sharedInstance = TeamController()
-    
-    var team: [TeamMember] = []
-    
-    func getTeamMembers() -> [TeamMember] {
+    static func getTeamMembers() -> [TeamMember] {
         guard let path = Bundle.main.path(forResource: "team", ofType: "json") else { return [] }
         do {
             let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)

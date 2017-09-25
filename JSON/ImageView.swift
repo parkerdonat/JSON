@@ -39,7 +39,6 @@ public class ImageView: UIView {
         
         imageView.layer.cornerRadius = 8
         imageView.clipsToBounds = true
-        
     }
     
     @IBAction func longPressed(_ sender: UILongPressGestureRecognizer) {

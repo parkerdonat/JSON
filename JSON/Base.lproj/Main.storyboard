@@ -281,8 +281,8 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="pvA-1j-z2I"/>
                                     <barButtonItem style="plain" id="fwg-EX-rPj">
                                         <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="Pfi-On-ECh">
-                                            <rect key="frame" x="42" y="7" width="330" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <rect key="frame" x="32" y="7" width="350" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <segments>
                                                 <segment title="Basics"/>
                                                 <segment title="Preferences"/>
@@ -334,8 +334,7 @@
                         <outlet property="avatar4" destination="S5b-QZ-zMh" id="FZD-ev-Cyo"/>
                         <outlet property="avatar5" destination="ezV-pA-Hnh" id="JfY-Zg-8x6"/>
                         <outlet property="avatar6" destination="dWW-J3-zNf" id="Nqd-vb-ol3"/>
-                        <outlet property="label" destination="fJ4-w4-U5Y" id="gVE-9k-QDO"/>
-                        <outlet property="segControl" destination="Pfi-On-ECh" id="2Cl-fZ-Qgr"/>
+                        <outlet property="bioLabel" destination="fJ4-w4-U5Y" id="qKz-tF-QUF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AvY-Zt-dwk" userLabel="First Responder" sceneMemberID="firstResponder"/>

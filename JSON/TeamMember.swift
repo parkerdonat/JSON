@@ -38,6 +38,5 @@ class TeamMember {
         self.title = title
         self.bio = bio
         self.avatar = avatar
-        
     }
 }
